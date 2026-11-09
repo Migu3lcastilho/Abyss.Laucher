@@ -52,7 +52,12 @@ arsort($contagem);
       <input type="text" id="busca" placeholder="Pesquisa jogos no catálogo...">
       <button type="button">Surpreenda-me</button>
     </form>
-    
+    <div class="filtro" id="filtro">
+      <button type="button" class="chip ativo" data-genero="">Todos <span><?= count($jogos) ?></span></button>
+      <?php foreach ($contagem as $g => $n) { ?>
+        <button type="button" class="chip" data-genero="<?= htmlspecialchars($g) ?>"><?= htmlspecialchars($g) ?> <span><?= $n ?></span></button>
+      <?php } ?>
+    </div>
 
     <main class="grid">
       <?php foreach ($jogos as $j) { ?>
