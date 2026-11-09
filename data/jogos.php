@@ -5,7 +5,7 @@ $banner = [
     "descricao" => "Um mercenário. Uma cidade futurista.<br>Uma luta pela sobrevivência.",
     "preco" => "R$ 200,00",
     "img" => "img/cyberpunk-banner.jpg",
-    "video" => "img/WhatsApp%20Video%202026-11-04%20at%2022.30.00.mp4", // vídeo que entra no carrossel do banner
+    "video" => "img/WhatsApp Video 2026-11-09 at 08.18.13.mp4",
 ];
 
 $jogos = [

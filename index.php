@@ -1,5 +1,5 @@
 <?php
-include "jogos.php";
+include __DIR__ . "/data/jogos.php";
 
 
 $contagem = [];
@@ -16,9 +16,15 @@ arsort($contagem);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catálogo de Jogos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+
+  <?php include __DIR__ . "/view/header.php"; ?>
+  
+
 
   <section class="hero" id="hero" style="--banner: url('<?= $banner["img"] ?>')">
     <video class="hero__video" id="heroVideo" src="<?= $banner["video"] ?>" muted playsinline preload="auto"></video>
@@ -52,13 +58,7 @@ arsort($contagem);
       <input type="text" id="busca" placeholder="Pesquisa jogos no catálogo...">
       <button type="button">Surpreenda-me</button>
     </form>
-    <div class="filtro" id="filtro">
-      <button type="button" class="chip ativo" data-genero="">Todos <span><?= count($jogos) ?></span></button>
-      <?php foreach ($contagem as $g => $n) { ?>
-        <button type="button" class="chip" data-genero="<?= htmlspecialchars($g) ?>"><?= htmlspecialchars($g) ?> <span><?= $n ?></span></button>
-      <?php } ?>
-    </div>
-
+   
     <main class="grid">
       <?php foreach ($jogos as $j) { ?>
         <article class="card" data-generos="<?= htmlspecialchars(str_replace(" • ", "|", $j["generos"])) ?>">
@@ -153,6 +153,9 @@ arsort($contagem);
     document.querySelector(".busca").addEventListener("submit", function (e) { e.preventDefault(); });
   })();
 </script>
+
+
+<?php include __DIR__ . "/view/footer.php"; ?>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <header>
     <div class="esquerda">
-      <a href="" class="ativo">Inicio</a>
+      <a href="index.php" class="ativo">Inicio</a>
       <a href="">Catalogo</a>
       <a href="">Sobre nós</a>
     </div>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="direita">
-      <img src="./imagens/perfil.png" alt="">
-      <img src="./imagens/logo.png" alt="">
+      <img src="img/PERFIL.png" alt="">
+      <img src="img/logo.png" alt="">
     </div>
 </header>
