@@ -16,7 +16,25 @@
     </div>
 
     <div class="direita">
-      <img src="./imagens/perfil.png" alt="">
+      <details class="menu-perfil">
+        <summary aria-label="Abrir opções do perfil">
+          <img src="./imagens/perfil.png" alt="Foto de perfil">
+        </summary>
+        <div class="opcoes-perfil">
+          <a href="#editar-perfil">Editar perfil</a>
+          <a href="#biblioteca">Biblioteca</a>
+        </div>
+      </details>
       <img src="./imagens/logo.png" alt="">
     </div>
 </header>
+
+<script>
+document.addEventListener('click', (evento) => {
+  document.querySelectorAll('.menu-perfil[open]').forEach((menu) => {
+    if (!menu.contains(evento.target) || evento.target.closest('.opcoes-perfil a')) {
+      menu.removeAttribute('open');
+    }
+  });
+});
+</script>

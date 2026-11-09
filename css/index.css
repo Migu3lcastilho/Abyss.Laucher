@@ -10,21 +10,56 @@ body{
 }
 
 .banner{
-    margin: 32px 150px 0;
-    display: flex;
-    flex-direction: column;
+    margin:32px 150px 0;
+    display:flex;
+    flex-direction:column;
+}
+.banner h1{margin-bottom:15px;font-size:16px;font-weight:600;}
+.banner img{width:100%;border:1px solid #777;object-fit:cover;transition:transform .25s ease,border-color .25s ease;}
+.banner img:hover{transform:scale(1.015);border:3px solid #9b75bd;}
 
-    h1{
-        margin-bottom: 15px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+.vitrine{
+    margin: 46px 150px 60px;
+    width: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 38px;
+    align-items: center;
+}
+.vitrine .jogo-principal{min-height:500px;border:1.5px solid #777;background-color:#111;background-position:center;background-size:cover;display:flex;align-items:flex-end;transition:transform .25s ease,border-color .25s ease;}
+.jogo-principal:hover{transform:scale(1.015);border-color:#9b75bd;}
+.jogo-conteudo{padding:32px;max-width:510px;}
+.logo-jogo{display:block;width:min(290px,70%);max-height:100px;object-fit:contain;object-position:left center;margin-bottom:26px;}
+.disponibilidade{font-size:11px;font-weight:700;margin-bottom:26px;}
+.descricao{font-size:14px;line-height:1.5;font-weight:600;max-width:390px;}
+.preco{font-size:15px;font-weight:700;margin-top:28px;}
+.acoes{display:flex;gap:12px;margin-top:10px;align-items:center;}
+.acoes button,.comprar{height:38px;min-width:40px;border:0;border-radius:9px;background:#ffffff26;color:white;display:grid;place-items:center;text-decoration:none;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease;}
+.acoes button:hover,.comprar:hover{transform:scale(1.08);background:#9276ae;color:#fff;}
+.comprar{min-width:132px;padding:0 16px;background:#fff;color:#111;font-size:12px;}
+.acoes button svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.lista-jogos{display:flex;flex-direction:column;gap:38px;}
+.jogo-opcao{--progresso:0%;position:relative;overflow:hidden;width:100%;min-height:80px;padding:10px 12px;display:flex;align-items:center;gap:12px;text-align:left;border:0;border-radius:24px;color:#eee;background:#303030;cursor:pointer;font:500 14px 'poppins',sans-serif;}
+.jogo-opcao::before{content:"";position:absolute;inset:0;width:var(--progresso);background:#9276ae;opacity:.42;transition:width .2s linear;}
+.jogo-opcao.selecionado{background:#242424;}
+.jogo-opcao img,.jogo-opcao span{position:relative;z-index:1;}
+.jogo-opcao img{width:44px;height:58px;object-fit:cover;flex:none;}
+.jogo-opcao span{overflow:hidden;text-overflow:ellipsis;}
 
-    img{
-        width: 100%;
-        border: 1px solid #777;
-        object-fit: cover;
-    }
+@media (max-width: 900px){
+    .banner{margin-left:36px;margin-right:36px;}
+    .vitrine{margin-left:36px;margin-right:36px;grid-template-columns:minmax(0,1fr) 175px;gap:18px;}
+    .jogo-principal{min-height:410px;}
+    .lista-jogos{gap:18px;}
+}
+@media (max-width: 600px){
+    .banner{margin:22px 12px 0;}
+    .vitrine{margin:28px 12px 40px;grid-template-columns:1fr;gap:14px;}
+    .jogo-principal{min-height:420px;}
+    .jogo-conteudo{padding:22px;}
+    .lista-jogos{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+    .jogo-opcao{min-height:70px;padding:8px;border-radius:18px;font-size:12px;}
+    .jogo-opcao img{width:38px;height:50px;}
 }
 
 .destaques{
