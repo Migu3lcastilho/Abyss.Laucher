@@ -114,6 +114,28 @@
         </div>
    </section>
 
+   <section class="lancamentos" aria-label="Novos lançamentos">
+        <div class="lancamentos-titulo">
+            <h1>Novos lançamentos</h1>
+            <div class="linha"></div>
+        </div>
+        <div class="lancamentos-conteudo">
+            <article class="lancamentos-banner">
+                <img src="./imagens/Verde lancamentos.png" alt="">
+                <h2>Novos<br>lançamentos</h2>
+                <a href="#">Ver mais</a>
+            </article>
+            <div class="lancamentos-jogos">
+                <a class="lancamento-jogo" href="#"><img src="./imagens/Lost twin.png" alt=""><span><strong>Lost twins II</strong><small>Em breve!</small></span></a>
+                <a class="lancamento-jogo" href="#"><img src="./imagens/Tatto shop simulator.png" alt=""><span><strong>Tattoo Shop Simulator</strong><small>R$ 50,99</small></span></a>
+                <a class="lancamento-jogo" href="#"><img src="./imagens/My dear.exe.png" alt=""><span><strong>My dear.exe</strong><small>R$ 20,99</small></span></a>
+                <a class="lancamento-jogo" href="#"><img src="./imagens/Deadly Match.png" alt=""><span><strong>Deadly match</strong><small>R$ 15,99</small></span></a>
+                <a class="lancamento-jogo" href="#"><img src="./imagens/Loftia.png" alt=""><span><strong>Loftia</strong><small>R$ 70,99</small></span></a>
+                <a class="lancamento-jogo" href="#"><img src="./imagens/RObot mil.png" alt=""><span><strong>Robot mil</strong><small>R$ 12,99</small></span></a>
+            </div>
+        </div>
+   </section>
+
     <script>
     (() => {
         const jogos = {
