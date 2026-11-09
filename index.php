@@ -65,6 +65,54 @@
         </nav>
    </section>
 
+   <section class="descubra" aria-label="Descubra algo novo">
+        <div class="descubra-titulo">
+            <h1>Descobrir algo novo</h1>
+            <div class="linha"></div>
+        </div>
+        <div class="descubra-conteudo">
+            <article class="descubra-banner">
+                <img src="./imagens/descubra.png" alt="Descobrir algo novo">
+                <h2>Descobrir<br>algo novo</h2>
+                <a href="#">Ver mais</a>
+            </article>
+            <div class="descubra-jogos">
+                <a class="descubra-jogo" href="#"><img src="./imagens/Sorry We Are Closed.png" alt=""><span><strong>Sorry were closed</strong><small>R$ 21,99</small></span></a>
+                <a class="descubra-jogo" href="#"><img src="./imagens/Metro 2030.png" alt=""><span><strong>Metro 2039</strong><small>R$ 359,99</small></span></a>
+                <a class="descubra-jogo" href="#"><img src="./imagens/Permafrost.png" alt=""><span><strong>Permafrost</strong><small>R$ 65,99</small></span></a>
+                <a class="descubra-jogo" href="#"><img src="./imagens/Beautiful ligth.png" alt=""><span><strong>Beautiful Light</strong><small>R$ 229,99</small></span></a>
+                <a class="descubra-jogo" href="#"><img src="./imagens/Forever ago.png" alt=""><span><strong>Forever Ago</strong><small>R$ 70,00</small></span></a>
+                <a class="descubra-jogo" href="#"><img src="./imagens/Out of word.png" alt=""><span><strong>Out of words</strong><small>R$ 199,99</small></span></a>
+            </div>
+        </div>
+   </section>
+
+   <section class="descontos" aria-label="Descontos em destaque">
+        <div class="descontos-titulo">
+            <h1>Descontos em destaque</h1>
+            <div class="linha"></div>
+        </div>
+        <div class="descontos-jogos">
+            <article class="desconto-jogo">
+                <img src="./imagens/Tomb raider.png" alt="Rise of the Tomb Raider: 20 Year Celebration">
+                <p class="categoria">Jogo base</p>
+                <h2>Rise of the Tomb Raider:<br>20 year celebration</h2>
+                <div class="precos-desconto"><span class="porcentagem">-90%</span><del>R$ 95,00</del><strong>R$ 9,50</strong></div>
+            </article>
+            <article class="desconto-jogo">
+                <img src="./imagens/Tomb Raider GOTY.png" alt="Tomb Raider GOTY">
+                <p class="categoria">Jogo base</p>
+                <h2>Tomb Raider GOTY</h2>
+                <div class="precos-desconto"><span class="porcentagem">-90%</span><del>R$ 39,00</del><strong>R$ 3,90</strong></div>
+            </article>
+            <article class="desconto-jogo">
+                <img src="./imagens/Metro Exodus.png" alt="Metro Exodus">
+                <p class="categoria">Jogo base</p>
+                <h2>Metro Exodus</h2>
+                <div class="precos-desconto"><span class="porcentagem">-90%</span><del>R$ 149,00</del><strong>R$ 14,90</strong></div>
+            </article>
+        </div>
+   </section>
 
     <script>
     (() => {
