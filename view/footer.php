@@ -2,7 +2,7 @@
     <div class="pt1">
       <div class="esquerda">
         <div class="marca">
-          <img src="./imagens/logo.png" alt="Logo Abyss">
+          <img src="img/logo.png" alt="Logo Abyss">
           <h1>Abyss</h1>
         </div>
         <p>Todos os seus jogos, conquistas e amizades em um só universo.</p>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="pt2">
-      <img src="./imagens/logo.png" alt="Logo Abyss">
+      <img src="img/logo.png" alt="Logo Abyss">
       <p>© 2026. Todos os direitos reservados a Abyss Laucher.</p>
     </div>
 </footer>

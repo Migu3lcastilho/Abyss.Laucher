@@ -18,7 +18,7 @@ body{
 
 .banner{
   position: relative;
-  height: 220px;
+  height: 400px;
   background-size: cover;
   background-position: center;
 
@@ -90,6 +90,12 @@ body{
       display: block;
       border-radius: 10px;
     }
+
+    video.cover{
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background-color: #000;
+    }
   }
 
   aside{
@@ -135,11 +141,5 @@ body{
       font-weight: 700;
       text-align: center;
     }
-  }
-}
-
-@media (max-width: 800px){
-  .wrap{
-    grid-template-columns: 1fr;
   }
 }

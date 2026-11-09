@@ -3,6 +3,7 @@ return [
   'peak' => [
     'titulo' => 'PEAK',
     'imagem' => 'img/peak.jpg',
+    'video' => 'video/peak.mp4',
     'lancamento' => '5/dez./2019',
     'publicadora' => 'Rockstar Games',
     'sobre' => 'Em PEAK, você e seus amigos são exploradores que precisam escalar uma montanha misteriosa, enfrentando perigos, obstáculos e condições extremas para alcançar o topo. Trabalhe em equipe, utilize equipamentos e faça o possível para sobreviver durante a jornada.',

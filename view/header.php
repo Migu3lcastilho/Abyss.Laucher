@@ -16,7 +16,7 @@
     </div>
 
     <div class="direita">
-      <img src="./imagens/perfil.png" alt="">
-      <img src="./imagens/logo.png" alt="">
+      <img src="img/PERFIL.png" alt="">
+      <img src="img/logo.png" alt="">
     </div>
 </header>

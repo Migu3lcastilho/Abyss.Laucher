@@ -1,8 +1,8 @@
 <?php
 $jogos = require __DIR__ . '/data/jogos.php';
 $id    = $_GET['id'] ?? 'peak';
-$tipo  = $_GET['tipo'] ?? 'fisico';                 
-$cond  = $_GET['cond'] ?? 'lacrado';               
+$tipo  = $_GET['tipo'] ?? 'fisico';
+$cond  = $_GET['cond'] ?? 'lacrado';
 
 if (!isset($jogos[$id])) { http_response_code(404); exit('Jogo não encontrado'); }
 $j = $jogos[$id];
@@ -19,10 +19,12 @@ $url   = fn(array $p) => '?' . http_build_query(array_merge(['id'=>$id,'tipo'=>$
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $e($j['titulo']) ?></title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="css/jogos.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+<?php include __DIR__ . "/view/header.php"; ?>
 
 <div class="banner" style="background-image:url('<?= $e($j['imagem']) ?>')">
   <div class="bar">
@@ -44,7 +46,14 @@ $url   = fn(array $p) => '?' . http_build_query(array_merge(['id'=>$id,'tipo'=>$
       <strong>Publicado por <?= $e($j['publicadora']) ?></strong>
     </div>
 
-    <img class="cover" src="<?= $e($j['imagem']) ?>" alt="<?= $e($j['titulo']) ?>">
+    <?php if (!empty($j['video'])): ?>
+      <video class="cover" controls playsinline preload="metadata" poster="<?= $e($j['imagem']) ?>">
+        <source src="<?= $e($j['video']) ?>" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    <?php else: ?>
+      <img class="cover" src="<?= $e($j['imagem']) ?>" alt="<?= $e($j['titulo']) ?>">
+    <?php endif; ?>
 
     <div class="card">
       <h3>Sobre o jogo</h3>
@@ -89,6 +98,9 @@ $url   = fn(array $p) => '?' . http_build_query(array_merge(['id'=>$id,'tipo'=>$
     </div>
   </aside>
 </div>
+
+
+<?php include __DIR__ . "/view/footer.php"; ?>
 
 </body>
 </html>
