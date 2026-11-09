@@ -27,3 +27,108 @@ body{
     }
 }
 
+.destaques{
+    margin: 46px 150px 60px;
+
+    .titulo{
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h1{
+            font-size: 15px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .linha{
+            width: 100%;
+            height: 1px;
+            background-color: #999;
+        }
+    }
+
+    .jogos{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .iten{
+        width: 30%;
+        border: 1px solid #777;
+        background-color: #000;
+        transition: transform 0.25s ease, border-color 0.25s ease;
+
+        &:hover{
+            border-color: #b99ad9;
+            transform: scale(1.04);
+
+            img{
+                border-bottom-color: #b99ad9;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-bottom: 1px solid #777;
+            transition: border-color 0.25s ease;
+        }
+
+        .informacoes{
+            padding: 12px 14px 16px;
+
+            h2{
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            p{
+                margin-top: 7px;
+                color: #999;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        .final{
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h3{
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            a{
+                padding: 5px 12px;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                border: 1px solid #777;
+                border-radius: 12px;
+                color: whitesmoke;
+                font-size: 11px;
+                text-decoration: none;
+                transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+
+                &:hover{
+                    border-color: #b99ad9;
+                    background-color: #b99ad9;
+                    color: #111;
+                }
+
+                span{
+                    font-size: 17px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+}

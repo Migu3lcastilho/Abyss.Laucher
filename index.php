@@ -21,6 +21,29 @@
    </div>
 
 
+     <div class="destaques">
+        <div class="titulo">
+            <h1>Jogos em destaque</h1>
+            <div class="linha"></div>
+        </div>
+
+        <div class="jogos">
+            <div class="iten">
+                <img src="./imagens/Fifa.png" alt="EA Sports FC 27">
+                <div class="informacoes">
+                    <h2>EA Sports FC 27</h2>
+                    <p>Esportes</p>
+                    <div class="final">
+                        <h3>R$ 349,99</h3>
+                        <a href="#">Ver jogo <span>›</span></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+     </div>
+
     <?php
     require './view/footer.php';
     ?>
